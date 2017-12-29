@@ -1,0 +1,258 @@
+/* general */
+* {
+  box-sizing: border-box; 
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0; 
+  background-color: grey;
+  font-size: 2rem;
+  color: black;
+}
+
+h1 {
+  font-family: 'Merriweather', serif;
+  color: white;
+  font-size: 4rem;
+  padding: 60px;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 60px;
+  font-weight: 800;
+  background-color: black;
+  border-bottom: 1px dashed  #581845;  
+  text-align: center;
+}
+h1 span {
+  color: gray;
+}
+/* .container {
+  height: 80vh;
+  text-align: center;
+} */
+
+.column {
+  text-align: left;
+  height: 60vh;
+}
+
+button {
+  font-size: 1rem;
+  background-color: black;
+  color:white;
+  cursor: pointer;
+  width: 200px;
+  float: right;
+  height: auto;
+}
+
+ .btn-primary {
+  background-color: black;
+  border: none;
+} 
+
+.btn-primary:focus {
+  background-color: black;
+  border: none;
+  transition: .2s; 
+}
+
+.btn-primary:hover {
+  background-color: white;
+  color: black;
+  border: none;
+  transition: .2s; 
+}
+
+.btn-primary:active {
+  background-color: grey;
+  color: white;
+  border: none;
+  transition: .2s; 
+}
+
+.btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary:active.focus, .btn-primary:active:focus, .btn-primary:active:hover, .open>.dropdown-toggle.btn-primary.focus, .open>.dropdown-toggle.btn-primary:focus, .open>.dropdown-toggle.btn-primary:hover {
+  color: #fff;
+  background-color: grey; 
+  border-color: black;
+}
+
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
+  outline: none;
+}
+
+#pic {
+  width: 90%; 
+  height: auto; 
+  border-radius: 3.9%;
+  box-shadow: 5px 5px 5px 1px #3a3a3a;
+}
+
+/* card name */
+.card-name {
+  font-size: 16px;
+  font-weight: 100;
+  padding-bottom:50px;
+}
+
+#card{
+  border-bottom: 1px solid grey;
+  padding: 5px;
+  font-weight: 800;
+  font-size: 26px;
+}
+
+#rarity, #type, #set, #price, #artist, #shopping, #oracle {
+  font-size: 16px;
+  background-color: rgb(133, 133, 133);
+  font-weight: 600;
+  padding: 5px;
+  padding: 10px;
+  color: rgb(43, 43, 43);
+}
+
+/* magic card market link */
+#shopping a {
+  color: black;
+  text-decoration: underline;
+}
+
+#shopping a:hover {
+  color: white;
+}
+
+/* cards rarity */
+.rare {
+  color: rgb(251, 220, 41);
+}
+
+.uncommon {
+  color: rgb(197, 197, 197);
+}
+
+.mythic {
+  color: rgb(153, 62, 2)
+}
+
+/* image preloader */
+.loader {
+  border: 16px solid #dddddd; 
+  border-top: 16px solid #000000; 
+  border-radius: 50%;
+  position: absolute;
+  top: 200px;
+  left: 13vw;
+  width: 120px;
+  height: 120px;
+  animation: spin 4s infinite linear;
+  animation-duration: 3s;
+  -webkit-animation: spin 4s infinite linear;
+  -webkit-animation-duration: 3s;
+  visibility: hidden;
+  opacity: 0.7;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@-webkit-keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+/* -------------------- */
+
+/* text effect */
+h1 span {
+  animation: color 26s infinite linear;
+  -webkit-animation: color 26s infinite linear;
+}
+
+@keyframes color {
+  0% { color: white; }
+  20% { color: rgb(28, 61, 253); }
+  40% { color: rgb(18, 116, 18); }
+  60% { color: rgb(216, 24, 24); }
+  80% { color: rgb(34, 34, 34); }
+  100% { color: white; }
+}
+@-webkit-keyframes color {
+  0% { color: white; }
+  20% { color: rgb(28, 61, 253); }
+  40% { color: rgb(18, 116, 18); }
+  60% { color: rgb(216, 24, 24); }
+  80% { color: rgb(34, 34, 34); }
+  100% { color: white; }
+}
+
+/* effect on app load */
+html {
+  animation: blink 2s linear;
+  -webkit-animation: blink 2s linear;
+}
+
+@keyframes blink {
+  0% { opacity: 0; }
+  25% { opacity: 0.25; }
+  50% { opacity: 0.5; }
+  75% { opacity: 0.75; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes blink {
+  0% { opacity: 0; }
+  25% { opacity: 0.25; }
+  50% { opacity: 0.5; }
+  75% { opacity: 0.75; }
+  100% { opacity: 1; }
+}
+
+/* ______________________________________________________________________ */
+/*----media group----*/
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+   
+}
+
+/* ______________________________________________________________________ */
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+  
+  
+}
+
+/* ______________________________________________________________________ */
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+
+  
+}
+/* ______________________________________________________________________ */
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+  
+  h1 {
+    line-height: 1.3em;
+    padding:20px;
+  }
+  img#pic {
+    margin-bottom: 20px;
+  }
+  #get-card {
+    margin:80px 0 30px 0;
+  }
+
+}
+/* ______________________________________________________________________ */
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+  
+ 
+
+}
+/* ______________________________________________________________________ */
+
+
