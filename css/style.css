@@ -24,7 +24,7 @@ h1 {
   text-align: center;
 }
 
-h1 p {
+h1 span {
   color: gray;
   font-size: 0.6em;
   padding:5px;
@@ -162,7 +162,7 @@ button {
 }
 
 /* text effect */
-h1 p {
+h1 span {
   animation: color 26s infinite linear;
   -webkit-animation: color 26s infinite linear;
 }
