@@ -4,7 +4,7 @@ const url = 'https://api.scryfall.com/cards/random'
 
 // podpinamy pod guzik nasłuchiwanie na kliknięcie tak aby każdorazowo pobierała nam się losowa karta
 let button = document.getElementById('get-card')
-button.addEventListener('click', function() {
+button.addEventListener('click', function () {
   getCard()
   document.getElementById('loader').style.visibility = 'visible';
 })
@@ -54,8 +54,8 @@ function getCard () {
 
     // poniżej generujemy linka do zakupów w magic card market
     let url = response.purchase_uris.magiccardmarket
-    let zakupy = 'kup tą kartę w magic card market'
-    shop.innerHTML = zakupy.link(url)
+    let shopping = 'kup tą kartę w magic card market'
+    shop.innerHTML = shopping.link(url)
 
     console.log(response)
     document.getElementById('loader').style.visibility = 'hidden'
