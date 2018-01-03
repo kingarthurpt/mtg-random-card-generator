@@ -4,4 +4,4 @@ Using scryfall API to choose random Magic The Gathering card.
 
 demo:
 
-https://xenogonx.github.io/mtg-random-card-generator/index.html
+https://xenogonx.github.io/mtg-random-card-generator/
