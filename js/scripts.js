@@ -4,13 +4,13 @@ const url = 'https://api.scryfall.com/cards/random'
 
 // podpinamy pod guzik nasłuchiwanie na kliknięcie tak aby każdorazowo pobierała nam się losowa karta + włączanie widoczności loadera
 let button = document.getElementById('get-card')
-button.addEventListener('click', function () {
+button.addEventListener('click', function() {
   getCard()
   document.getElementById('loader').style.visibility = 'visible';
 })
 
 // ładowanie losowej karty po załadowaniu strony + loader
-document.body.onload = function () {
+document.body.onload = function() {
   getCard()
   document.getElementById('loader').style.visibility = 'visible';
 }
@@ -26,11 +26,12 @@ let shop = document.getElementById('shopping')
 let oracle = document.getElementById('oracle')
 
 // implementacja funkcji getcard
-function getCard () {
-  var xhr = new XMLHttpRequest()
+function getCard() {
+  let xhr = new XMLHttpRequest()
   xhr.open('GET', url, true)
-  xhr.addEventListener('load', function () {
-    var response = JSON.parse(xhr.response)
+  xhr.addEventListener('load', function() {
+    const response = JSON.parse(xhr.response);
+
     nazwa.innerHTML = response.name
     artist.innerHTML = "<span class='card-name'>autor ilustracji: </span>" + response.artist
     type.innerHTML = "<span class='card-name'>typ: </span>" + response.type_line
