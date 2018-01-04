@@ -37,7 +37,7 @@ h1 span {
   margin-bottom: 0;
 }
 
-/* buttons styles */
+/* button styles */
 button {
   font-size: 1rem;
   background-color: black;
@@ -83,6 +83,7 @@ button {
 .btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
   outline: none;
 }
+
 /* card picture */
 #pic {
   width: 90%; 
@@ -98,6 +99,7 @@ button {
   padding-bottom:50px;
 }
 
+/* styles for information field*/
 #card{
   padding: 5px;
   font-weight: 800;
@@ -262,8 +264,11 @@ html {
   }
   
   #get-card {
-    margin: -5px 0 30px 0;
+    width: 100%;
+    padding:20px;
+    font-size: 1.5em;
   }
+
   .btn-primary:active {
     background-color: black;
     color: white;
