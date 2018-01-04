@@ -2,14 +2,14 @@
 // zmienna url zawiera pełny adres do losowej karty
 const url = 'https://api.scryfall.com/cards/random'
 
-// podpinamy pod guzik nasłuchiwanie na kliknięcie tak aby każdorazowo pobierała nam się losowa karta
+// podpinamy pod guzik nasłuchiwanie na kliknięcie tak aby każdorazowo pobierała nam się losowa karta + włączanie widoczności loadera
 let button = document.getElementById('get-card')
 button.addEventListener('click', function () {
   getCard()
   document.getElementById('loader').style.visibility = 'visible';
 })
 
-// ładowanie losowej karty po załadowaniu strony
+// ładowanie losowej karty po załadowaniu strony + loader
 document.body.onload = function () {
   getCard()
   document.getElementById('loader').style.visibility = 'visible';
@@ -25,6 +25,7 @@ let set = document.getElementById('set')
 let shop = document.getElementById('shopping')
 let oracle = document.getElementById('oracle')
 
+// implementacja funkcji getcard
 function getCard () {
   var xhr = new XMLHttpRequest()
   xhr.open('GET', url, true)
@@ -39,7 +40,7 @@ function getCard () {
     art.src = response.image_uris.normal
     oracle.innerHTML = "<span class='card-name'>tekst: </span>" + response.oracle_text
 
-    // sprawdzamy czy karta ma cenę jeżeli nie wyświetla się komunikat
+    // sprawdzamy czy karta ma cenę, jeżeli nie ma wyświetla się stosowny komunikat
     if (response.eur === undefined) {
       price.innerHTML = 'brak ceny'
     }
