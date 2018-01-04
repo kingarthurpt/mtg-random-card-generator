@@ -27,13 +27,15 @@ h1 {
 h1 span {
   color: gray;
   font-size: 0.6em;
-  padding:5px;
+  padding: 5px;
 }
 /* main information about card */
 .column {
   text-align: left;
   height: 60vh;
+  margin-bottom: 0;
 }
+
 /* buttons styles */
 button {
   font-size: 1rem;
