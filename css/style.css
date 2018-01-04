@@ -265,8 +265,9 @@ html {
   
   #get-card {
     width: 100%;
-    padding:20px;
+    padding:20px 0;
     font-size: 1.5em;
+    border-radius: 0;
   }
 
   .btn-primary:active {
