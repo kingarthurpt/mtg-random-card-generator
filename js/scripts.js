@@ -7,7 +7,7 @@ let button = document.getElementById('get-card')
 button.addEventListener('click', function() {
   getCard()
   document.getElementById('loader').style.visibility = 'visible';
-  window.location.href="#pic";
+  window.location.href="#loader";
 })
 
 // ładowanie losowej karty po załadowaniu strony + loader
