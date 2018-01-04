@@ -29,6 +29,7 @@ h1 span {
   font-size: 0.6em;
   padding: 5px;
 }
+
 /* main information about card */
 .column {
   text-align: left;
@@ -249,9 +250,14 @@ html {
 @media (max-width: 480px) {
 
   #get-card {
-    margin: -30px 0 30px 0;
-    border: 13px solid red;
-  } 
+    margin: 0px 0 30px 0;
+  }
+
+  .btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary:active.focus, .btn-primary:active:focus, .btn-primary:active:hover, .open>.dropdown-toggle.btn-primary.focus, .open>.dropdown-toggle.btn-primary:focus, .open>.dropdown-toggle.btn-primary:hover {
+    color: #fff;
+    background-color: black;
+    border-color: black;
+  }
 }
 /* ______________________________________________________________________ */
 
