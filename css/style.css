@@ -245,13 +245,8 @@ html {
 
 /* Portrait phones and smaller */
 @media (max-width: 480px) {
-  #get-card {
-    display: block;
-    margin: 80px 0 30px 0;
-  }
-  #shopping {
-    margin-bottom: 100px;
-  }
+
+ 
 }
 /* ______________________________________________________________________ */
 
