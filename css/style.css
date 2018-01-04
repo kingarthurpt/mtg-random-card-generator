@@ -246,7 +246,9 @@ html {
 /* Portrait phones and smaller */
 @media (max-width: 480px) {
 
- 
+  #get-card {
+    margin: -30px 0 30px 0;
+  } 
 }
 /* ______________________________________________________________________ */
 
