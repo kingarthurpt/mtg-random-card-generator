@@ -51,12 +51,16 @@ button {
  .btn-primary {
   background-color: black;
   border: none;
+  -webkit-transition: .4s;
+  -moz-transition: .4s;
   transition: .4s;
 } 
 
 .btn-primary:focus {
   background-color: black;
   border: none;
+  -webkit-transition: .4s;
+  -moz-transition: .4s;
   transition: .4s; 
 }
 
@@ -64,6 +68,8 @@ button {
   background-color: white;
   color: black;
   border: none;
+  -webkit-transition: .4s;
+  -moz-transition: .4s;
   transition: .4s; 
 }
 
@@ -71,6 +77,8 @@ button {
   background-color: grey;
   color: white;
   border: none;
+  -webkit-transition: .4s;
+  -moz-transition: .4s;
   transition: .4s; 
 }
 
@@ -262,6 +270,7 @@ html {
     background-color:black;
     text-align: center;
   }
+
   h1 span {
     display: block;
     color: gray;
@@ -274,7 +283,7 @@ html {
     padding:18px 0;
     font-size: 1.3em;
     border-radius: 0;
-    border:0;
+    border: 0;
     margin-top: 5px;
   }
 
@@ -282,14 +291,18 @@ html {
     background-color: black;
     color: white;
     border: none;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
     transition: .4s; 
   }
+
   .btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary:active.focus, .btn-primary:active:focus, .btn-primary:active:hover, .open>.dropdown-toggle.btn-primary.focus, .open>.dropdown-toggle.btn-primary:focus, .open>.dropdown-toggle.btn-primary:hover {
     color: #fff;
     background-color: black;
     border-color: black;
   }
-  img#pic {
+
+  #pic {
     display: block;
     width:100%;
     margin: 0 auto;
