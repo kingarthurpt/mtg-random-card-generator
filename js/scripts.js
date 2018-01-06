@@ -1,7 +1,6 @@
 
 // adres API
 const url = 'https://api.scryfall.com/cards/random';
-
 // podpinamy pod guzik nasłuchiwanie na kliknięcie tak aby każdorazowo po kliknięciu pobierała nam się losowa karta (funkcja getCard) + loader
 let button = document.getElementById('get-card');
 button.addEventListener('click', function() {
@@ -16,22 +15,22 @@ document.body.onload = function() {
   getCard();
 };
 
-let nazwa = document.getElementById('card');
-let artist = document.getElementById('artist');
-let art = document.getElementById('pic');
-let type = document.getElementById('type');
-let price = document.getElementById('price');
-let rarity = document.getElementById('rarity');
-let set = document.getElementById('set');
-let shop = document.getElementById('shopping');
-let oracle = document.getElementById('oracle');
-
 // implementacja funkcji getCard() - połączenie z API, odebranie danych JSON, parsowanie i wyświetlenie
 function getCard() {
   let xhr = new XMLHttpRequest();
   xhr.open('GET', url, true);
   xhr.addEventListener('load', function() {
+
     const response = JSON.parse(xhr.response);
+    let nazwa = document.getElementById('card');
+    let artist = document.getElementById('artist');
+    let art = document.getElementById('pic');
+    let type = document.getElementById('type');
+    let price = document.getElementById('price');
+    let rarity = document.getElementById('rarity');
+    let set = document.getElementById('set');
+    let shop = document.getElementById('shopping');
+    let oracle = document.getElementById('oracle');
     
     nazwa.innerHTML = response.name;
     artist.innerHTML = "<span class='card-name'>autor ilustracji: </span>" + response.artist;
