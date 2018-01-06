@@ -1,6 +1,7 @@
 
 // adres API
 const url = 'https://api.scryfall.com/cards/random';
+
 // podpinamy pod guzik nasłuchiwanie na kliknięcie tak aby każdorazowo po kliknięciu pobierała nam się losowa karta (funkcja getCard) + loader
 let button = document.getElementById('get-card');
 button.addEventListener('click', function() {
