@@ -57,9 +57,9 @@ function getCard() {
     }
 
     // poniżej generujemy linka do zakupów w magic card market
-    let url = response.purchase_uris.magiccardmarket;
+    let shopLink = response.purchase_uris.magiccardmarket;
     let shopping = 'kup tą kartę w magic card market';
-    shop.innerHTML = shopping.link(url);
+    shop.innerHTML = shopping.link(shopLink);
 
     console.log(response);
     // ukrycie loadera
