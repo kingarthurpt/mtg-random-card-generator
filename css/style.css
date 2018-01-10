@@ -9,6 +9,7 @@ body {
   background-color: grey;
   font-size: 2em;
   color: black;
+  -webkit-font-smoothing: antialiased;
 }
 
 h1 {
