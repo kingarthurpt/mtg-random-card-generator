@@ -22,15 +22,15 @@ function getCard() {
   xhr.addEventListener("load", function() {
 
     const response = JSON.parse(xhr.response);
-    let nazwa = document.getElementById("card");
-    let artist = document.getElementById("artist");
-    let art = document.getElementById("pic");
-    let type = document.getElementById("type");
-    let price = document.getElementById("price");
-    let rarity = document.getElementById("rarity");
-    let set = document.getElementById("set");
-    let shop = document.getElementById("shopping");
-    let oracle = document.getElementById("oracle");
+    const nazwa = document.getElementById("card");
+    const artist = document.getElementById("artist");
+    const art = document.getElementById("pic");
+    const type = document.getElementById("type");
+    const price = document.getElementById("price");
+    const rarity = document.getElementById("rarity");
+    const set = document.getElementById("set");
+    const shop = document.getElementById("shopping");
+    const oracle = document.getElementById("oracle");
    
     nazwa.innerHTML = response.name;
     artist.innerHTML = "<span class='card-name'>autor ilustracji: </span>" + response.artist;
@@ -40,7 +40,7 @@ function getCard() {
     set.innerHTML = "<span class='card-name'>dodatek: </span>" + response.set_name + " [" + response.set + "]";
     art.src = response.image_uris.normal;
     oracle.innerHTML = "<span class='card-name'>tekst: </span>" + response.oracle_text;
-
+    
     // sprawdzamy czy jest dostępna cena dla wylosowanej larty
     if (response.eur === undefined) {
       price.innerHTML = "brak ceny";
@@ -56,8 +56,8 @@ function getCard() {
     }
 
     // poniżej generujemy linka do zakupów w magic card market
-    let shopLink = response.purchase_uris.magiccardmarket;
-    let shopping = "kup tą kartę w magic card market";
+    const shopLink = response.purchase_uris.magiccardmarket;
+    const shopping = "kup tą kartę w magic card market";
     shop.innerHTML = shopping.link(shopLink);
 
     console.log(response);
