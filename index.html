@@ -5,66 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Magic The Gathering - random card generator</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<!--  -->
 <body>
   <section class="display" id="display">
-      <h1>Magic the Gathering
-        <span>random card generator</span>
-      </h1>
     <div class="container">
       <div class="row">
-        <div class="col-xs-12"></div>
-      </div>
-      <div class="row">
 <!-- card picture -->
-        <div class="col-xs-12 col-sm-6 card-pic"> 
+        <div class="col-xs-12 col-sm-12 card-pic"> 
           <div class="loader" id="loader"></div>
-          <img id="pic" src="#" alt="card_image">
-        </div>
-        <div class="col-xs-12 col-sm-6">
-          <div class="column">
-<!-- card name -->
-          <div class="row">
-            <div class="col-xs-12">
-              <p id="card"></p>
-            </div>
-<!-- rarity -->
-            <div class="col-xs-12">
-              <p id="rarity"></p>
-            </div>
-<!-- set name -->
-            <div class="col-xs-12">
-              <p id="type"></p>
-            </div>
-<!-- type -->
-            <div class="col-xs-12">
-              <p id="set"></p>
-            </div>
-<!-- oracle text -->
-            <div class="col-xs-12">
-                <p id="oracle"></p>
-              </div>
-<!-- price -->
-            <div class="col-xs-12">
-              <p id="price"></p>
-            </div>
-<!-- illustration -->
-            <div class="col-xs-12">
-              <p id="artist"></p>
-            </div>
-<!-- shopping -->
-            <div class="col-xs-12">
-              <p id="shopping"></p>
-            </div>
-          </div>
-        </div>
+          <div id="pic" alt="card_image"></div>
         </div>
 <!-- random card button -->
-        <button id="get-card" class="btn btn-lg btn-primary" >wylosuj nową kartę...</button>
       </div>
     </div>
   </section>
